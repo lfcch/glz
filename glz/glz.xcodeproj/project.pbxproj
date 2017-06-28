@@ -9,13 +9,12 @@
 /* Begin PBXBuildFile section */
 		503B85C21F03068100E33625 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85C11F03068100E33625 /* AppDelegate.swift */; };
 		503B85C51F03068100E33625 /* glz.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 503B85C31F03068100E33625 /* glz.xcdatamodeld */; };
-		503B85C71F03068100E33625 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85C61F03068100E33625 /* MasterViewController.swift */; };
-		503B85C91F03068100E33625 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85C81F03068100E33625 /* DetailViewController.swift */; };
 		503B85CC1F03068100E33625 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503B85CA1F03068100E33625 /* Main.storyboard */; };
 		503B85CE1F03068100E33625 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503B85CD1F03068100E33625 /* Assets.xcassets */; };
 		503B85D11F03068100E33625 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503B85CF1F03068100E33625 /* LaunchScreen.storyboard */; };
 		503B85DC1F03068200E33625 /* glzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85DB1F03068200E33625 /* glzTests.swift */; };
 		503B85E71F03068200E33625 /* glzUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85E61F03068200E33625 /* glzUITests.swift */; };
+		503B85FA1F04645300E33625 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503B85F91F04645300E33625 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +38,6 @@
 		503B85BE1F03068100E33625 /* glz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = glz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503B85C11F03068100E33625 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		503B85C41F03068100E33625 /* glz.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = glz.xcdatamodel; sourceTree = "<group>"; };
-		503B85C61F03068100E33625 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		503B85C81F03068100E33625 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		503B85CB1F03068100E33625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		503B85CD1F03068100E33625 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		503B85D01F03068100E33625 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +48,7 @@
 		503B85E21F03068200E33625 /* glzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = glzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503B85E61F03068200E33625 /* glzUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = glzUITests.swift; sourceTree = "<group>"; };
 		503B85E81F03068200E33625 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		503B85F91F04645300E33625 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +99,12 @@
 		503B85C01F03068100E33625 /* glz */ = {
 			isa = PBXGroup;
 			children = (
+				503B85F81F04617600E33625 /* util */,
+				503B85F71F04617000E33625 /* view */,
+				503B85F61F04616400E33625 /* resources */,
+				503B85F51F04605E00E33625 /* model */,
+				503B85F41F04602200E33625 /* controller */,
 				503B85C11F03068100E33625 /* AppDelegate.swift */,
-				503B85C61F03068100E33625 /* MasterViewController.swift */,
-				503B85C81F03068100E33625 /* DetailViewController.swift */,
 				503B85CA1F03068100E33625 /* Main.storyboard */,
 				503B85CD1F03068100E33625 /* Assets.xcassets */,
 				503B85CF1F03068100E33625 /* LaunchScreen.storyboard */,
@@ -129,6 +130,42 @@
 				503B85E81F03068200E33625 /* Info.plist */,
 			);
 			path = glzUITests;
+			sourceTree = "<group>";
+		};
+		503B85F41F04602200E33625 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				503B85F91F04645300E33625 /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		503B85F51F04605E00E33625 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		503B85F61F04616400E33625 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		503B85F71F04617000E33625 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		503B85F81F04617600E33625 /* util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +305,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503B85FA1F04645300E33625 /* ViewController.swift in Sources */,
 				503B85C21F03068100E33625 /* AppDelegate.swift in Sources */,
 				503B85C51F03068100E33625 /* glz.xcdatamodeld in Sources */,
-				503B85C71F03068100E33625 /* MasterViewController.swift in Sources */,
-				503B85C91F03068100E33625 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
