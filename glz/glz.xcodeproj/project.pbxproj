@@ -99,8 +99,8 @@
 		503B86061F0468C000E33625 /* glz */ = {
 			isa = PBXGroup;
 			children = (
+				503B86381F0468D800E33625 /* controller */,
 				503B86071F0468C000E33625 /* AppDelegate.swift */,
-				503B86091F0468C000E33625 /* ViewController.swift */,
 				503B860B1F0468C000E33625 /* Main.storyboard */,
 				503B86111F0468C000E33625 /* Assets.xcassets */,
 				503B86131F0468C000E33625 /* LaunchScreen.storyboard */,
@@ -126,6 +126,14 @@
 				503B862C1F0468C000E33625 /* Info.plist */,
 			);
 			path = glzUITests;
+			sourceTree = "<group>";
+		};
+		503B86381F0468D800E33625 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				503B86091F0468C000E33625 /* ViewController.swift */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
